@@ -29,9 +29,9 @@ public class WebSocketConfiguration extends AbstractWebSocketMessageBrokerConfig
 
 	/* This method specify the prefixes and addresses of our web socket endpoint */
 	@Override
-	public void configureMessageBroker(MessageBrokerRegistry confi) {
-		confi.enableSimpleBroker("/chat");
-		confi.setApplicationDestinationPrefixes("/app");
+	public void configureMessageBroker(MessageBrokerRegistry config) {
+		config.enableSimpleBroker("/chat");
+		config.setApplicationDestinationPrefixes("/app");
 	}
 
 }
